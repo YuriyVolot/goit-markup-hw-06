@@ -114,7 +114,9 @@ body {
   text-decoration: none;
   padding: 15px;
   color: #fefefe;
-  transition: background-color var(--animation-time) var(--function-time);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -160,10 +162,12 @@ body {
   font-family: var(--font-opensans);
   font-size: 14px;
   font-weight: 900;
-
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -495,6 +499,9 @@ body {
   background-repeat: no-repeat;
   border: 1px solid var(--white-color);
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .like {
