@@ -499,9 +499,9 @@ body {
   background-repeat: no-repeat;
   border: 1px solid var(--white-color);
   cursor: pointer;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--function-time);
 }
 
 .like {
@@ -533,6 +533,9 @@ body {
   background-image: url(../images/icons/cart.png);
   background-position: 10%;
   background-repeat: no-repeat;
+  transition-property: background-color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--function-time);
 }
 
 .overlay-icon:hover,
